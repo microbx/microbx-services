@@ -1,0 +1,122 @@
+mutation {
+    api: createSchema(
+        data: {
+            name: "microbz-service-api"
+            description: "Microbz API Service"
+        }
+    ) {
+        id
+    }
+    auth: createSchema(
+        data: {
+            name: "microbz-service-auth"
+            description: "Microbz Auth Service"
+        }
+    ) {
+        id
+    }
+    blog: createSchema(
+        data: {
+            name: "microbz-service-blog"
+            description: "Microbz Blog Service"
+        }
+    ) {
+        id
+    }
+    commands: createSchema(
+        data: {
+            name: "microbz-service-commands"
+            description: "Microbz Commands Service"
+        }
+    ) {
+        id
+    }
+    environments: createSchema(
+        data: {
+            name: "microbz-service-environments"
+            description: "Microbz Environments Service"
+        }
+    ) {
+        id
+    }
+    events: createSchema(
+        data: {
+            name: "microbz-service-events"
+            description: "Microbz Events Service"
+        }
+    ) {
+        id
+    }
+    generators: createSchema(
+        data: {
+            name: "microbz-service-generators"
+            description: "Microbz Generators Service"
+        }
+    ) {
+        id
+    }
+    hooks: createSchema(
+        data: {
+            name: "microbz-service-hooks"
+            description: "Microbz Hooks Service"
+        }
+    ) {
+        id
+    }
+    loggers: createSchema(
+        data: {
+            name: "microbz-service-loggers"
+            description: "Microbz Loggers Service"
+        }
+    ) {
+        id
+    }
+    profiles: createSchema(
+        data: {
+            name: "microbz-service-profiles"
+            description: "Microbz Profiles Service"
+        }
+    ) {
+        id
+    }
+    projects: createSchema(
+        data: {
+            name: "microbz-service-projects"
+            description: "Microbz Projects Service"
+        }
+    ) {
+        id
+    }
+    registries: createSchema(
+        data: {
+            name: "microbz-service-registries"
+            description: "Microbz Registries Service"
+        }
+    ) {
+        id
+    }
+    schemas: createSchema(
+        data: {
+            name: "microbz-service-schemas"
+            description: "Microbz Schemas Service"
+        }
+    ) {
+        id
+    }
+    services: createSchema(
+        data: {
+            name: "microbz-service-services"
+            description: "Microbz Services Service"
+        }
+    ) {
+        id
+    }
+    tasks: createSchema(
+        data: {
+            name: "microbz-service-tasks"
+            description: "Microbz Tasks Service"
+        }
+    ) {
+        id
+    }
+}

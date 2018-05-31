@@ -1,0 +1,15 @@
+# import Logger from './prisma.graphql'
+
+type Query {
+    getLogger(id: ID!): Logger
+    listLoggers: [Logger!]!
+}
+
+type Mutation {
+    registerLogger(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Logger
+    unregisterLogger(id: ID!): Logger
+}

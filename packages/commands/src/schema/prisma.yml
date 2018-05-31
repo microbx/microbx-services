@@ -1,0 +1,15 @@
+
+endpoint: ${env:PRISMA_ENDPOINT}
+
+datamodel:
+  - model.graphql
+
+seed:
+  import: seed.graphql
+
+hooks:
+  post-deploy:
+    - graphql get-schema --project database
+    - graphql prepare
+
+secret: ${env:PRISMA_SECRET}

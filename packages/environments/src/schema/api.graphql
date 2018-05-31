@@ -1,0 +1,15 @@
+# import Environment from './prisma.graphql'
+
+type Query {
+    getEnvironment(id: ID!): Environment
+    listEnvironments: [Environment!]!
+}
+
+type Mutation {
+    registerEnvironment(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Environment
+    unregisterEnvironment(id: ID!): Environment
+}

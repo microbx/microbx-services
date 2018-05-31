@@ -1,0 +1,15 @@
+# import Blog from './prisma.graphql'
+
+type Query {
+    getBlog(id: ID!): Blog
+    listBlogs: [Blog!]!
+}
+
+type Mutation {
+    registerBlog(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Blog
+    unregisterBlog(id: ID!): Blog
+}

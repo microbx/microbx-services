@@ -1,0 +1,15 @@
+# import Schema from './prisma.graphql'
+
+type Query {
+    getSchema(id: ID!): Schema!
+    listSchemas: [Schema!]!
+}
+
+type Mutation {
+    registerSchema(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Schema
+    unregisterSchema(id: ID!): Schema
+}

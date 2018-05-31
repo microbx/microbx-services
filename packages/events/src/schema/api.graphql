@@ -1,0 +1,15 @@
+# import Event from './prisma.graphql'
+
+type Query {
+    getEvent(id: ID!): Event
+    listEvents: [Event!]!
+}
+
+type Mutation {
+    registerEvent(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Event
+    unregisterEvent(id: ID!): Event
+}

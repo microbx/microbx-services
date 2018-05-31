@@ -1,0 +1,122 @@
+mutation {
+    api: createProfile(
+        data: {
+            name: "microbz-service-api"
+            description: "Microbz API Service"
+        }
+    ) {
+        id
+    }
+    auth: createProfile(
+        data: {
+            name: "microbz-service-auth"
+            description: "Microbz Auth Service"
+        }
+    ) {
+        id
+    }
+    blog: createProfile(
+        data: {
+            name: "microbz-service-blog"
+            description: "Microbz Blog Service"
+        }
+    ) {
+        id
+    }
+    commands: createProfile(
+        data: {
+            name: "microbz-service-commands"
+            description: "Microbz Commands Service"
+        }
+    ) {
+        id
+    }
+    environments: createProfile(
+        data: {
+            name: "microbz-service-environments"
+            description: "Microbz Environments Service"
+        }
+    ) {
+        id
+    }
+    events: createProfile(
+        data: {
+            name: "microbz-service-events"
+            description: "Microbz Events Service"
+        }
+    ) {
+        id
+    }
+    generators: createProfile(
+        data: {
+            name: "microbz-service-generators"
+            description: "Microbz Generators Service"
+        }
+    ) {
+        id
+    }
+    hooks: createProfile(
+        data: {
+            name: "microbz-service-hooks"
+            description: "Microbz Hooks Service"
+        }
+    ) {
+        id
+    }
+    loggers: createProfile(
+        data: {
+            name: "microbz-service-loggers"
+            description: "Microbz Loggers Service"
+        }
+    ) {
+        id
+    }
+    profiles: createProfile(
+        data: {
+            name: "microbz-service-profiles"
+            description: "Microbz Profiles Service"
+        }
+    ) {
+        id
+    }
+    projects: createProfile(
+        data: {
+            name: "microbz-service-projects"
+            description: "Microbz Projects Service"
+        }
+    ) {
+        id
+    }
+    registries: createProfile(
+        data: {
+            name: "microbz-service-registries"
+            description: "Microbz Registries Service"
+        }
+    ) {
+        id
+    }
+    schemas: createProfile(
+        data: {
+            name: "microbz-service-schemas"
+            description: "Microbz Schemas Service"
+        }
+    ) {
+        id
+    }
+    services: createProfile(
+        data: {
+            name: "microbz-service-services"
+            description: "Microbz Services Service"
+        }
+    ) {
+        id
+    }
+    tasks: createProfile(
+        data: {
+            name: "microbz-service-tasks"
+            description: "Microbz Tasks Service"
+        }
+    ) {
+        id
+    }
+}

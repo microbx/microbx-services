@@ -1,0 +1,15 @@
+# import Generator from './prisma.graphql'
+
+type Query {
+    getGenerator(id: ID!): Generator
+    listGenerators: [Generator!]!
+}
+
+type Mutation {
+    registerGenerator(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Generator
+    unregisterGenerator(id: ID!): Generator
+}

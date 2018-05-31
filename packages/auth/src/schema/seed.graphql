@@ -1,0 +1,122 @@
+mutation {
+    api: createAuth(
+        data: {
+            name: "microbz-service-api"
+            description: "Microbz API Service"
+        }
+    ) {
+        id
+    }
+    auth: createAuth(
+        data: {
+            name: "microbz-service-auth"
+            description: "Microbz Auth Service"
+        }
+    ) {
+        id
+    }
+    blog: createAuth(
+        data: {
+            name: "microbz-service-blog"
+            description: "Microbz Blog Service"
+        }
+    ) {
+        id
+    }
+    commands: createAuth(
+        data: {
+            name: "microbz-service-commands"
+            description: "Microbz Commands Service"
+        }
+    ) {
+        id
+    }
+    environments: createAuth(
+        data: {
+            name: "microbz-service-environments"
+            description: "Microbz Environments Service"
+        }
+    ) {
+        id
+    }
+    events: createAuth(
+        data: {
+            name: "microbz-service-events"
+            description: "Microbz Events Service"
+        }
+    ) {
+        id
+    }
+    generators: createAuth(
+        data: {
+            name: "microbz-service-generators"
+            description: "Microbz Generators Service"
+        }
+    ) {
+        id
+    }
+    hooks: createAuth(
+        data: {
+            name: "microbz-service-hooks"
+            description: "Microbz Hooks Service"
+        }
+    ) {
+        id
+    }
+    loggers: createAuth(
+        data: {
+            name: "microbz-service-loggers"
+            description: "Microbz Loggers Service"
+        }
+    ) {
+        id
+    }
+    profiles: createAuth(
+        data: {
+            name: "microbz-service-profiles"
+            description: "Microbz Profiles Service"
+        }
+    ) {
+        id
+    }
+    projects: createAuth(
+        data: {
+            name: "microbz-service-projects"
+            description: "Microbz Projects Service"
+        }
+    ) {
+        id
+    }
+    registries: createAuth(
+        data: {
+            name: "microbz-service-registries"
+            description: "Microbz Registries Service"
+        }
+    ) {
+        id
+    }
+    schemas: createAuth(
+        data: {
+            name: "microbz-service-schemas"
+            description: "Microbz Schemas Service"
+        }
+    ) {
+        id
+    }
+    services: createAuth(
+        data: {
+            name: "microbz-service-services"
+            description: "Microbz Services Service"
+        }
+    ) {
+        id
+    }
+    tasks: createAuth(
+        data: {
+            name: "microbz-service-tasks"
+            description: "Microbz Tasks Service"
+        }
+    ) {
+        id
+    }
+}

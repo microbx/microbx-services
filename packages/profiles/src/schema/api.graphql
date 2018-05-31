@@ -1,0 +1,15 @@
+# import Profile from './prisma.graphql'
+
+type Query {
+    getProfile(id: ID!): Profile
+    listProfiles: [Profile!]!
+}
+
+type Mutation {
+    registerProfile(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Profile
+    unregisterProfile(id: ID!): Profile
+}

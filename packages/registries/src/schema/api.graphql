@@ -1,0 +1,15 @@
+# import Registry from './prisma.graphql'
+
+type Query {
+    getRegistry(id: ID!): Registry
+    listRegistries: [Registry!]!
+}
+
+type Mutation {
+    registerRegistry(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Registry
+    unregisterRegistry(id: ID!): Registry
+}

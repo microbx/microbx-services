@@ -1,0 +1,122 @@
+mutation {
+    api: createCommand(
+        data: {
+            name: "microbz-service-api"
+            description: "Microbz API Service"
+        }
+    ) {
+        id
+    }
+    auth: createCommand(
+        data: {
+            name: "microbz-service-auth"
+            description: "Microbz Auth Service"
+        }
+    ) {
+        id
+    }
+    blog: createCommand(
+        data: {
+            name: "microbz-service-blog"
+            description: "Microbz Blog Service"
+        }
+    ) {
+        id
+    }
+    commands: createCommand(
+        data: {
+            name: "microbz-service-commands"
+            description: "Microbz Commands Service"
+        }
+    ) {
+        id
+    }
+    environments: createCommand(
+        data: {
+            name: "microbz-service-environments"
+            description: "Microbz Environments Service"
+        }
+    ) {
+        id
+    }
+    events: createCommand(
+        data: {
+            name: "microbz-service-events"
+            description: "Microbz Events Service"
+        }
+    ) {
+        id
+    }
+    generators: createCommand(
+        data: {
+            name: "microbz-service-generators"
+            description: "Microbz Generators Service"
+        }
+    ) {
+        id
+    }
+    hooks: createCommand(
+        data: {
+            name: "microbz-service-hooks"
+            description: "Microbz Hooks Service"
+        }
+    ) {
+        id
+    }
+    loggers: createCommand(
+        data: {
+            name: "microbz-service-loggers"
+            description: "Microbz Loggers Service"
+        }
+    ) {
+        id
+    }
+    profiles: createCommand(
+        data: {
+            name: "microbz-service-profiles"
+            description: "Microbz Profiles Service"
+        }
+    ) {
+        id
+    }
+    projects: createCommand(
+        data: {
+            name: "microbz-service-projects"
+            description: "Microbz Projects Service"
+        }
+    ) {
+        id
+    }
+    registries: createCommand(
+        data: {
+            name: "microbz-service-registries"
+            description: "Microbz Registries Service"
+        }
+    ) {
+        id
+    }
+    schemas: createCommand(
+        data: {
+            name: "microbz-service-schemas"
+            description: "Microbz Schemas Service"
+        }
+    ) {
+        id
+    }
+    services: createCommand(
+        data: {
+            name: "microbz-service-services"
+            description: "Microbz Services Service"
+        }
+    ) {
+        id
+    }
+    tasks: createCommand(
+        data: {
+            name: "microbz-service-tasks"
+            description: "Microbz Tasks Service"
+        }
+    ) {
+        id
+    }
+}

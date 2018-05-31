@@ -1,0 +1,14 @@
+# import Service from './prisma.graphql'
+
+type Query {
+    getService(id: ID!): Service
+    listServices: [Service!]!
+}
+
+type Mutation {
+    registerService(
+        name: String!
+        description: String
+    ): Service
+    unregisterService(id: ID!): Service
+}

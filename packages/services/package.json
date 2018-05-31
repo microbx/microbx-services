@@ -1,0 +1,29 @@
+{
+    "private": true,
+    "name": "microbx-service-services",
+    "description": "Microbx Services Service",
+    "version": "0.0.1",
+    "author": "Christopher Dowell <cbdowell@gmail.com>",
+    "license": "MIT",
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "babel src -d dist --copy-files",
+        "dev": "dotenv -- nodemon --exec babel-node src/index.js",
+        "start": "dotenv -- node dist/index.js",
+        "test": "dotenv -- jest"
+    },
+    "dependencies": {
+        "dotenv": "^5.0.1",
+        "dotenv-cli": "^1.4.0",
+        "graphql-yoga": "^1.14.6",
+        "prisma-binding": "^2.0.2"
+    },
+    "devDependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-plugin-inline-import": "^2.0.6",
+        "babel-plugin-module-resolver": "^3.1.1",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-0": "^6.24.1"
+    }
+}

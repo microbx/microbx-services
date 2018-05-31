@@ -1,0 +1,7 @@
+type Registry {
+    id: ID! @unique
+    createdAt: DateTime!
+    updatedAt: DateTime!
+    name: String! @unique
+    description: String
+}

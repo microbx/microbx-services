@@ -1,0 +1,15 @@
+# import Command from './prisma.graphql'
+
+type Query {
+    getCommand(id: ID!): Command
+    listCommands: [Command!]!
+}
+
+type Mutation {
+    registerCommand(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Command
+    unregisterCommand(id: ID!): Command
+}

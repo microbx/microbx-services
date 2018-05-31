@@ -1,0 +1,15 @@
+# import Hook from './prisma.graphql'
+
+type Query {
+    getHook(id: ID!): Hook
+    listHooks: [Hook!]!
+}
+
+type Mutation {
+    registerHook(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Hook
+    unregisterHook(id: ID!): Hook
+}

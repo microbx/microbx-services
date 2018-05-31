@@ -1,0 +1,122 @@
+mutation {
+    api: createLogger(
+        data: {
+            name: "microbz-service-api"
+            description: "Microbz API Service"
+        }
+    ) {
+        id
+    }
+    auth: createLogger(
+        data: {
+            name: "microbz-service-auth"
+            description: "Microbz Auth Service"
+        }
+    ) {
+        id
+    }
+    blog: createLogger(
+        data: {
+            name: "microbz-service-blog"
+            description: "Microbz Blog Service"
+        }
+    ) {
+        id
+    }
+    commands: createLogger(
+        data: {
+            name: "microbz-service-commands"
+            description: "Microbz Commands Service"
+        }
+    ) {
+        id
+    }
+    environments: createLogger(
+        data: {
+            name: "microbz-service-environments"
+            description: "Microbz Environments Service"
+        }
+    ) {
+        id
+    }
+    events: createLogger(
+        data: {
+            name: "microbz-service-events"
+            description: "Microbz Events Service"
+        }
+    ) {
+        id
+    }
+    generators: createLogger(
+        data: {
+            name: "microbz-service-generators"
+            description: "Microbz Generators Service"
+        }
+    ) {
+        id
+    }
+    hooks: createLogger(
+        data: {
+            name: "microbz-service-hooks"
+            description: "Microbz Hooks Service"
+        }
+    ) {
+        id
+    }
+    loggers: createLogger(
+        data: {
+            name: "microbz-service-loggers"
+            description: "Microbz Loggers Service"
+        }
+    ) {
+        id
+    }
+    profiles: createLogger(
+        data: {
+            name: "microbz-service-profiles"
+            description: "Microbz Profiles Service"
+        }
+    ) {
+        id
+    }
+    projects: createLogger(
+        data: {
+            name: "microbz-service-projects"
+            description: "Microbz Projects Service"
+        }
+    ) {
+        id
+    }
+    registries: createLogger(
+        data: {
+            name: "microbz-service-registries"
+            description: "Microbz Registries Service"
+        }
+    ) {
+        id
+    }
+    schemas: createLogger(
+        data: {
+            name: "microbz-service-schemas"
+            description: "Microbz Schemas Service"
+        }
+    ) {
+        id
+    }
+    services: createLogger(
+        data: {
+            name: "microbz-service-services"
+            description: "Microbz Services Service"
+        }
+    ) {
+        id
+    }
+    tasks: createLogger(
+        data: {
+            name: "microbz-service-tasks"
+            description: "Microbz Tasks Service"
+        }
+    ) {
+        id
+    }
+}

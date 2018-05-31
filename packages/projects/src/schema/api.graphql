@@ -1,0 +1,15 @@
+# import Project from './prisma.graphql'
+
+type Query {
+    getProject(id: ID!): Project
+    listProjects: [Project!]!
+}
+
+type Mutation {
+    registerProject(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Project
+    unregisterProject(id: ID!): Project
+}

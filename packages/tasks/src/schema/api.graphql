@@ -1,0 +1,15 @@
+# import Task from './prisma.graphql'
+
+type Query {
+    getTask(id: ID!): Task
+    listTasks: [Task!]!
+}
+
+type Mutation {
+    registerTask(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Task
+    unregisterTask(id: ID!): Task
+}

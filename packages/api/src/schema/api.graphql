@@ -1,0 +1,15 @@
+# import Api from './prisma.graphql'
+
+type Query {
+    getApi(id: ID!): Api
+    listApis: [Api!]!
+}
+
+type Mutation {
+    registerApi(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Api
+    unregisterApi(id: ID!): Api
+}

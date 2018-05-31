@@ -1,0 +1,15 @@
+# import Auth from './prisma.graphql'
+
+type Query {
+    getAuth(id: ID!): Auth
+    listAuths: [Auth!]!
+}
+
+type Mutation {
+    registerAuth(
+        name: String!
+        namespace: String!
+        endpoint: String!
+    ): Auth
+    unregisterAuth(id: ID!): Auth
+}
