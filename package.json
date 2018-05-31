@@ -1,6 +1,11 @@
 {
-  "name": "microbx-services",
-  "version": "1.0.0",
-  "main": "index.js",
-  "license": "MIT"
+    "private": true,
+    "name": "microbx-services",
+    "license": "MIT",
+    "workspaces": [
+        "packages/*"
+    ],
+    "devDependencies": {
+        "lerna": "^2.11.0"
+    }
 }
