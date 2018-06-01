@@ -1,11 +1,23 @@
 {
     "private": true,
     "name": "microbx-services",
+    "description": "Microbx Services",
+    "author": "Christopher Dowell <cbdowell@gmail.com>",
     "license": "MIT",
     "workspaces": [
         "packages/*"
     ],
+    "scripts": {
+        "build": "lerna exec -- yarn build",
+        "clean": "rimraf -rf packages/*/dist"
+    },
     "devDependencies": {
-        "lerna": "^2.11.0"
+        "babel-cli": "^6.26.0",
+        "babel-plugin-transform-runtime": "^6.23.0",
+        "babel-preset-env": "^1.7.0",
+        "babel-preset-stage-0": "^6.24.1",
+        "lerna": "^2.11.0",
+        "nodemon": "^1.17.5",
+        "rimraf": "^2.6.2"
     }
 }

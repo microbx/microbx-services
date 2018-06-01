@@ -1,16 +1,15 @@
 {
     "private": true,
     "name": "microbx-service-api",
-    "version": "0.0.1",
     "description": "Microbx API Service",
+    "version": "0.0.1",
     "author": "Christopher Dowell <cbdowell@gmail.com>",
     "license": "MIT",
-    "main": "dist/index.js",
     "scripts": {
         "build": "babel src -d dist --copy-files",
-        "dev": "nodemon --exec babel-node src/index.js",
-        "start": "node dist/index.js",
-        "test": "jest"
+        "dev":
+            "dotenv -- nodemon --exec babel-node src/index.js",
+        "start": "dotenv -- node dist/index.js"
     },
     "dependencies": {
         "apollo-fetch": "^0.7.0",
@@ -21,15 +20,5 @@
         "graphql-yoga": "^1.14.6",
         "node-fetch": "^2.1.2",
         "prisma-binding": "^2.0.2"
-    },
-    "devDependencies": {
-        "babel-cli": "^6.26.0",
-        "babel-jest": "^23.0.1",
-        "babel-plugin-inline-import": "^2.0.6",
-        "babel-plugin-module-resolver": "^3.1.1",
-        "babel-plugin-transform-runtime": "^6.23.0",
-        "babel-preset-env": "^1.7.0",
-        "babel-preset-stage-0": "^6.24.1",
-        "jest": "^23.0.1"
     }
 }

@@ -1,13 +1,12 @@
 import { GraphQLServer } from 'graphql-yoga'
 import { Prisma } from 'prisma-binding'
 
-// Test 1
 import fetch from 'node-fetch'
 import { makeRemoteExecutableSchema } from 'graphql-tools'
 import { introspectSchema } from 'graphql-tools'
 import { mergeSchemas } from 'graphql-tools'
 import { createHttpLink } from 'apollo-link-http'
-import resolvers from 'resolvers'
+import resolvers from './resolvers'
 
 const getIntrospectSchema = async url => {
     const makeDatabaseServiceLink = () =>
