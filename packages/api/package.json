@@ -1,24 +1,25 @@
 {
-    "private": true,
-    "name": "microbx-service-api",
-    "description": "Microbx API Service",
-    "version": "0.0.1",
-    "author": "Christopher Dowell <cbdowell@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-        "build": "babel src -d dist --copy-files",
-        "dev":
-            "dotenv -- nodemon --exec babel-node src/index.js",
-        "start": "dotenv -- node dist/index.js"
-    },
-    "dependencies": {
-        "apollo-fetch": "^0.7.0",
-        "apollo-link-http": "^1.5.4",
-        "graphql-request": "^1.6.0",
-        "graphql-tools": "^3.0.2",
-        "graphql-transform-schema": "^0.2.2",
-        "graphql-yoga": "^1.14.6",
-        "node-fetch": "^2.1.2",
-        "prisma-binding": "^2.0.2"
-    }
+  "name": "microbx-service-api",
+  "description": "Microbx API Service",
+  "version": "0.0.2",
+  "author": "Christopher Dowell <cbdowell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "compile": "echo runnimg compile...",
+    "db:deploy": "prisma deploy --force",
+    "db:generate": "graphql get-schema --project database",
+    "dev": "dotenv -- nodemon --exec babel-node src/index.js",
+    "start": "dotenv -- node dist/index.js"
+  },
+  "dependencies": {
+    "apollo-fetch": "^0.7.0",
+    "apollo-link-http": "^1.5.4",
+    "graphql-request": "^1.6.0",
+    "graphql-tools": "^3.0.2",
+    "graphql-transform-schema": "^0.2.2",
+    "graphql-yoga": "^1.14.6",
+    "node-fetch": "^2.1.2",
+    "prisma-binding": "^2.0.2"
+  }
 }

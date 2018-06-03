@@ -1,19 +1,21 @@
 {
-    "private": true,
-    "name": "microbx-service-schemas",
-    "description": "Microbx Schemas Service",
-    "version": "0.0.1",
-    "author": "Christopher Dowell <cbdowell@gmail.com>",
-    "license": "MIT",
-    "scripts": {
-        "build": "babel src -d dist --copy-files",
-        "dev": "dotenv -- nodemon --exec babel-node src/index.js",
-        "start": "dotenv -- node dist/index.js"
-    },
-    "dependencies": {
-        "dotenv": "^5.0.1",
-        "dotenv-cli": "^1.4.0",
-        "graphql-yoga": "^1.14.6",
-        "prisma-binding": "^2.0.2"
-    }
+  "name": "microbx-service-schemas",
+  "description": "Microbx Schemas Service",
+  "version": "0.0.2",
+  "author": "Christopher Dowell <cbdowell@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "babel src -d dist --copy-files",
+    "compile": "echo runnimg compile...",
+    "db:deploy": "prisma deploy --force",
+    "db:generate": "graphql get-schema --project database",
+    "dev": "dotenv -- nodemon --exec babel-node src/index.js",
+    "start": "dotenv -- node dist/index.js"
+  },
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "dotenv-cli": "^1.4.0",
+    "graphql-yoga": "^1.14.6",
+    "prisma-binding": "^2.0.2"
+  }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "microbx-service-projects",
-  "description": "Microbx Projects Service",
+  "name": "microbx-service-envs",
+  "description": "Microbx Envs Service",
   "version": "0.0.2",
   "author": "Christopher Dowell <cbdowell@gmail.com>",
   "license": "MIT",
